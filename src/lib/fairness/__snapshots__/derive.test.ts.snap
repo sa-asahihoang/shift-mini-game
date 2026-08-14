@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`deriveHand > GOLDEN VECTOR — không bao giờ được cập nhật snapshot này 1`] = `"1,2,2,1,1,0,0,2,1,1,1,2,1,1,1,1,0,1,2,2"`;

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/*
+ * Cố tình KHÔNG theo dark mode của hệ điều hành.
+ *
+ * Ba tay phân biệt nhau bằng màu (lam, lục, đỏ) và cả trò chơi dựa vào việc màu
+ * đó đọc đúng. Đảo nền theo thiết lập máy người dùng làm tương phản lệch đi và
+ * hai người chơi cạnh nhau nhìn thấy hai bảng màu khác nhau — thứ tệ cho một trò
+ * mà toàn bộ niềm tin nằm ở chỗ "ai cũng thấy y như nhau".
+ */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
